@@ -1,0 +1,12 @@
+html
+  head
+    title
+    link(href='../../node_modules/jquery-ui/themes/cupertino/jquery-ui.css', rel='stylesheet', type='text/css')
+    link(href='../../bootstrap/dist/css/bootstrap.css', rel='stylesheet', type='text/css')
+  body
+    #react
+  script
+    :coffeescript
+      require('coffee-react').register()
+      require('../coffee-cache').register()
+      require("./boot")
