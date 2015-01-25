@@ -6,22 +6,10 @@ MenuItem = require('menu-item')
 
 debug = require("debug")("client:index")
 
-jade = require "jade"
 path = require "path"
-
-###
-isJadeExtension = (ext) ->
-  ext is '.jade'
-###
 
 createWindow = (url, options, initDev = false) ->
   win = new BrowserWindow options
-  # url = "#{__dirname}/#{url}"
-
-  # if isJadeExtension path.extname url
-  # then url = "data:text/html," + encodeURIComponent(jade.renderFile url, {"path": __dirname})
-  # else url = "file://#{url}"
-
   if initDev
     win.openDevTools()
   win.loadUrl "file://#{__dirname}/#{url}"

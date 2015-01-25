@@ -4,13 +4,13 @@ module.exports = (grunt) ->
     "download-atom-shell":
       version: "0.20.7"
       outputDir: "bin"
-    "jade": 
+    "jade":
       compile:
         options:
+          pretty: true
           data:
-            debug: true
             timestamp: "<%= grunt.template.today() %>"
-        files: 
+        files:
           "src/web/index.html": "src/web/index.jade"
 
   grunt.loadNpmTasks 'grunt-contrib-jade'

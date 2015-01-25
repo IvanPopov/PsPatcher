@@ -48,3 +48,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# Project compile
+src/**/*.html
