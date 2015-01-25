@@ -1,0 +1,6 @@
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap
+[submodule "react-devtools"]
+	path = react-devtools
+	url = https://github.com/facebook/react-devtools
